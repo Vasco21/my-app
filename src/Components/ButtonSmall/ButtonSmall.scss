@@ -1,0 +1,20 @@
+.Button-small{
+    position: relative;
+    margin: 0 7px;
+    @include buttonPrimary;
+    background-color: #ff5823;
+  
+    &__notification{
+      display: block;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: $contrast-color;
+      position: absolute;
+      right: -25%;
+      top: -55%;
+    }
+    .Button-small:hover{
+      background-color: gray;
+    }
+  }

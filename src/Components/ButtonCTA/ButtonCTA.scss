@@ -1,0 +1,18 @@
+.ButtonCTA{
+    @include buttonPrimary;
+    padding: 6px 12px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #ff5823;
+    color: white;
+    border-radius: 5px;
+  }
+  .ButtonCTA:hover{
+    background-color:darkgray
+  }
+
+  .added{
+    color: black;
+    border: 2px solid $contrast-color;
+    background-color: transparent;
+  }

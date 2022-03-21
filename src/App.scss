@@ -1,0 +1,84 @@
+$border-color: #bbbbbb64;
+$contrast-color: #b15baa;
+$clear-color: #e2e2e219;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 62.5%;
+  background-color: gray;
+}
+#root{
+  position: relative;
+  min-height: 100vh;
+}
+.App{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+.h3{
+  color:black;
+}
+.gradient__bg{
+  background:-moz-linear-gradient(90deg, rgba(60, 25, 60, 1) 0%, rgba(0, 0, 255, 1) 100%); 
+    /* safari 5.1+,chrome 10+ */
+  background:-webkit-linear-gradient(90deg, rgba(60, 25, 60, 1) 0%, rgba(0, 0, 255, 1) 100%);
+    /* opera 11.10+ */
+  background:-o-linear-gradient(90deg, rgba(60, 25, 60, 1) 0%, rgba(0, 0, 255, 1) 100%);
+    /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0000ff', endColorstr='#3C193C', GradientType=0 );
+    /* ie 10+ */
+  background:-ms-linear-gradient(90deg, rgba(60, 25, 60, 1) 0%, rgba(0, 0, 255, 1) 100%);
+    /* global 94%+ browsers support */
+  background:linear-gradient(90deg, rgba(60, 25, 60, 1) 0%, rgba(0, 0, 255, 1) 100%);
+}
+.gradient__text {
+  background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clop: text;
+  -webkit-text-fill-color: transparent ;
+}
+.section__padding {
+  padding: 4rem 6rem;
+}
+.section__margin{
+  margin: 4rem 6rem;
+}
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+@mixin buttonPrimary {
+  border: none;
+  background-color: transparent;
+}
+
+@import "./Pages/Home/Home.scss";
+@import "./Pages/Menu/Menu.scss";
+@import "./Pages/Cart/Cart.scss";
+@import "./Pages/Product/Product.scss";
+@import "./Pages/Checkout/Checkout.scss";
+
+@import "./Containers/Header/Header.scss";
+@import "./Containers/Filter/Filter.scss";
+@import "./Containers/Skeleton/Skeleton.scss";
+@import "./Containers/SocialMedia/SocialMedia.scss";
+
+@import "./Components/SearchInput/SearchInput.scss";
+@import "./Components/ButtonCTA/ButtonCTA.scss";
+@import "./Components/Item/Item.scss";
+@import "./Components/ButtonSmall/ButtonSmall.scss";
+@import "./Components/Loader/Loader.scss";
+@import "./Components/Product/Product.scss";
+@import "./Components/ButtonCategory/ButtonCategory.scss";
+@import "./Components/ChockoutInput/CheckoutInput.scss";
+
+

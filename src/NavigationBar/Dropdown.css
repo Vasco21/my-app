@@ -1,0 +1,32 @@
+.aboutus-submenu {
+  width: 10rem;
+  position: absolute;
+  top: 67px;
+  list-style: none;
+  text-align: start;
+  
+  
+}
+
+.aboutus-submenu li {
+  background: #F57F17;
+  cursor: pointer;
+ 
+} 
+
+.aboutus-submenu li a:hover {
+  background: #F57F17;
+}
+
+.aboutus-submenu.clicked {
+  display: none;
+}
+
+.submenu-item {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: white;
+  padding: 16px;
+}
